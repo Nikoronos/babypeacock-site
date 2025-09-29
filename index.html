@@ -1,35 +1,77 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>BabyPeacock Coin (BPC)</title>
-  <style>
-    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial;background:#ffffff;color:#111}
-    header{padding:16px 20px;border-bottom:1px solid #eee}
-    .wrap{max-width:960px;margin:0 auto;padding:20px}
-    h1{margin:0;font-size:28px}
-    .btn{display:inline-block;margin:8px 8px 0 0;padding:10px 14px;border-radius:10px;text-decoration:none;background:#4FC3F7;color:#001320;font-weight:700}
-    .card{border:1px solid #eee;border-radius:12px;padding:16px;margin-top:16px;background:#fafafa}
-    footer{border-top:1px solid #eee;margin-top:32px;padding:16px 0;color:#666}
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>BabyPeacock Coin (BPC)</title>
+<meta name="description" content="BabyPeacock (BPC) — cute, community-first meme coin.">
+<style>
+  :root{--bg:#0f1115;--card:#181c22;--txt:#e8eef6;--muted:#9fb1c7;--pri:#3ea8ff;--accent:#6ee7b7}
+  *{box-sizing:border-box} body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial;background:var(--bg);color:var(--txt)}
+  .wrap{max-width:980px;margin:0 auto;padding:24px}
+  header{padding:24px 0;border-bottom:1px solid #222}
+  .brand{display:flex;align-items:center;gap:12px;font-size:28px;font-weight:800}
+  .brand span{font-size:30px} .tag{color:var(--muted);font-weight:600}
+  .hero{display:grid;gap:16px;padding:24px 0}
+  .cta a{display:inline-block;margin:8px 8px 0 0;padding:12px 16px;border-radius:12px;text-decoration:none;font-weight:700;background:var(--pri);color:#06131f}
+  .cta a.secondary{background:transparent;border:1px solid #2a313a;color:var(--txt)}
+  .grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+  .card{background:var(--card);border:1px solid #232932;border-radius:14px;padding:18px}
+  h2{margin:0 0 8px} p{margin:8px 0;color:var(--muted);line-height:1.6}
+  .code{font-family:ui-monospace,Consolas,monospace;background:#11161c;border:1px solid #222a33;border-radius:10px;padding:10px;color:#9fe1ff}
+  footer{border-top:1px solid #222;margin-top:28px;color:var(--muted);padding:18px 0;text-align:center}
+</style>
 </head>
 <body>
-  <header><div class="wrap"><h1>🦚 BabyPeacock Coin (BPC)</h1></div></header>
+<header class="wrap">
+  <div class="brand"><span>🦚</span> BabyPeacock Coin <span class="tag">(BPC)</span></div>
+</header>
 
-  <main class="wrap">
-    <p>Welcome! This is the official placeholder site for <b>BabyPeacock</b>. We’ll add the full design next.</p>
-    <a class="btn" href="#">Buy on PumpFun</a>
-    <a class="btn" href="#">Join Telegram</a>
-    <a class="btn" href="#">Follow on X</a>
-
-    <div class="card">
-      <h2>About</h2>
-      <p>BabyPeacock is a cute, community-first meme coin. Website is under construction — stay tuned!</p>
+<main class="wrap">
+  <section class="hero">
+    <h1 style="margin:0">The cutest community coin on Solana.</h1>
+    <p><b>BabyPeacock</b> is a fun, community-first meme coin. Fair vibes, transparent tokenomics, simple roadmap.</p>
+    <div class="cta">
+      <a href="#" id="buy">Buy on PumpFun</a>
+      <a href="#" class="secondary" id="tg">Join Telegram</a>
+      <a href="#" class="secondary" id="x">Follow on X</a>
     </div>
-  </main>
+    <div class="card">
+      <strong>Contract</strong>
+      <div class="code" id="ca">SOLANA_CONTRACT_ADDRESS_HERE</div>
+    </div>
+  </section>
 
-  <footer><div class="wrap">© <span id="y"></span> BabyPeacock</div></footer>
-  <script>document.getElementById('y').textContent=new Date().getFullYear();</script>
+  <section class="grid" style="margin-top:8px">
+    <div class="card">
+      <h2>Tokenomics</h2>
+      <p>• Supply: <b>1,000,000,000 BPC</b><br>
+         • LP: <b>xx%</b> (burn/lock)<br>
+         • Team: <b>0%</b><br>
+         • Airdrop & community: <b>xx%</b></p>
+    </div>
+    <div class="card">
+      <h2>Roadmap</h2>
+      <p>Phase 1 — Launch, socials, memes<br>
+         Phase 2 — Listings & growth partnerships<br>
+         Phase 3 — Community treasury & utilities</p>
+    </div>
+    <div class="card">
+      <h2>Why BabyPeacock?</h2>
+      <p>Cute brand, simple story, transparent setup. Built for community fun and organic growth.</p>
+    </div>
+  </section>
+</main>
+
+<footer>© <span id="y"></span> BabyPeacock — All rights reserved.</footer>
+<script>
+  document.getElementById('y').textContent = new Date().getFullYear();
+  // Hızlı düzenleme noktaları:
+  // Aşağıya gerçek linklerini gir:
+  document.getElementById('buy').href = '#';       // PumpFun linki
+  document.getElementById('tg').href  = '#';       // Telegram
+  document.getElementById('x').href   = '#';       // X (Twitter)
+  document.getElementById('ca').textContent = 'YOUR_CONTRACT_ADDRESS';
+</script>
 </body>
 </html>
