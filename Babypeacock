@@ -101,7 +101,10 @@
       <p>Bizimle X’te buluş: <a class="btn" href="https://x.com/Babypeakcoin" target="_blank" rel="noopener">X’te Takip Et</a></p>
     </div>
   </section>
-
+/* X butonu tıklama düzeltmesi */
+.x-btn { position: relative; z-index: 10; pointer-events: auto; display:inline-flex; align-items:center; }
+.x-btn svg { margin-right:6px; }
+.hero, .hero * { pointer-events: auto; } /* olası global engelleri kırar */
   <footer>
     <p>© 2025 Bebek Tavuskuşu (BPC). Tüm Hakları Saklıdır.</p>
   </footer>
