@@ -46,11 +46,18 @@
     <div class="container hero-inner">
       <h1>Küçük kuş, büyük hayaller 🦚✨</h1>
       <p>BabyPeacock (BPC) – sevimli, topluluk odaklı meme coin. Eğlence için, topluluk için!</p>
-      <p>
-        <a class="btn primary" id="buyLink" href="#">PumpFun’dan Satın Al</a>
-        <a class="btn" href="#community">Topluluğa Katılın</a>
-        <a class="btn" href="https://x.com/Babypeakcoin" target="_blank" rel="noopener">X’te Takip Et</a><a class="btn" href="https://x.com/Babypeakcoin?t=JM_ZCXc8cLZj1Rs7Z5Ni6g&s=09" target="_blank" rel="noopener">X’te Takip Et</a>
-      </p>
+        <<p>
+  <a class="btn primary" id="buyLink" href="#">PumpFun’dan Satın Al</a>
+  <a class="btn" href="#community">Topluluğa Katılın</a>
+  <a class="btn" href="https://x.com/Babypeakcoin?t=JM_ZCXc8cLZj1Rs7Z5Ni6g&s=09" target="_blank" rel="noopener">
+    <!-- Siyah X logosu -->
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1227" width="18" height="18" style="vertical-align:middle;margin-right:6px;">
+      <path fill="#000000" d="M714 0h259L486 543l511 684H738L476 789 178 1227H-81l498-670L-9 0h305l237 333L714 0z"/>
+    </svg>
+    X’te Takip Et
+  </a>
+</p>
+      
       <div>
         <span class="badge">Adil Lansman</span>
         <span class="badge">Ön Satış Yok</span>
