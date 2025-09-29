@@ -1,13 +1,35 @@
-# babypeacock-site
-BabyPeacock Coin Website
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>BabyPeacock Coin</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>BabyPeacock Coin (BPC)</title>
+  <style>
+    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial;background:#ffffff;color:#111}
+    header{padding:16px 20px;border-bottom:1px solid #eee}
+    .wrap{max-width:960px;margin:0 auto;padding:20px}
+    h1{margin:0;font-size:28px}
+    .btn{display:inline-block;margin:8px 8px 0 0;padding:10px 14px;border-radius:10px;text-decoration:none;background:#4FC3F7;color:#001320;font-weight:700}
+    .card{border:1px solid #eee;border-radius:12px;padding:16px;margin-top:16px;background:#fafafa}
+    footer{border-top:1px solid #eee;margin-top:32px;padding:16px 0;color:#666}
+  </style>
 </head>
 <body>
-  <h1>🐥 BabyPeacock Coin</h1>
-  <p>Welcome to the official website of BabyPeacock Coin!</p>
+  <header><div class="wrap"><h1>🦚 BabyPeacock Coin (BPC)</h1></div></header>
+
+  <main class="wrap">
+    <p>Welcome! This is the official placeholder site for <b>BabyPeacock</b>. We’ll add the full design next.</p>
+    <a class="btn" href="#">Buy on PumpFun</a>
+    <a class="btn" href="#">Join Telegram</a>
+    <a class="btn" href="#">Follow on X</a>
+
+    <div class="card">
+      <h2>About</h2>
+      <p>BabyPeacock is a cute, community-first meme coin. Website is under construction — stay tuned!</p>
+    </div>
+  </main>
+
+  <footer><div class="wrap">© <span id="y"></span> BabyPeacock</div></footer>
+  <script>document.getElementById('y').textContent=new Date().getFullYear();</script>
 </body>
 </html>
