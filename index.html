@@ -25,14 +25,20 @@
       transition: 0.5s;
     }
 
+    .bird:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 35px #6f00ff;
+    }
+
     @keyframes fly {
       0%, 100% { transform: translateY(0) rotate(0deg); }
       50% { transform: translateY(-10px) rotate(-2deg); }
     }
 
-    h2 {
+    h1, h2 {
       color: #b4f1ff;
       text-shadow: 0 0 10px #00eaff;
+      margin-bottom: 10px;
     }
 
     .info-box {
@@ -41,58 +47,91 @@
       text-align: left;
       color: #cceaff;
       line-height: 1.6;
-      padding: 0 20px;
+      padding: 0 20px 10px 20px;
+    }
+
+    .info-box ul {
+      padding-left: 20px;
+    }
+
+    .info-box li {
+      margin-bottom: 6px;
     }
 
     a {
       color: #00eaff;
+    }
+
+    footer {
+      margin: 40px 0 20px;
+      font-size: 13px;
+      color: #8ecfff;
     }
   </style>
 </head>
 
 <body>
 
+  <!-- Logo + Title -->
   <img src="./bpc.png" alt="Babypeacock Logo" class="bird">
-  <h2>🦚 Babypeacock Space Game</h2>
+  <h1>Babypeacock Space Game</h1>
 
   <!-- GAME INFO SECTION -->
   <section class="info-box">
-    <h2 style="text-align:center; color:#00eaff;">About the Game</h2>
-    <p><b>Babypeacock Space</b> is a simple, fast, and fun arcade game designed for all ages.</p>
-    <ul style="color:#cceaff; line-height:1.8;">
+    <h2>About the Game</h2>
+    <p>
+      <b>Babypeacock Space</b> is a simple, fast and fun arcade game designed for players of all ages.
+      The goal is to survive as long as possible while dodging obstacles and increasing your score.
+    </p>
+    <ul>
       <li>✔ Fully playable offline</li>
-      <li>✔ Optional online leaderboard system</li>
+      <li>✔ Optional online leaderboard system for high scores</li>
       <li>✔ No accounts or login required</li>
-      <li>✔ No cryptocurrency, wallet, or blockchain integrations</li>
       <li>✔ No personal data collection</li>
-      <li>✔ Lightweight and optimized for all devices</li>
+      <li>✔ Smooth and lightweight gameplay</li>
+      <li>✔ Optimized for a wide range of Android devices</li>
     </ul>
   </section>
 
   <!-- PRIVACY POLICY SECTION -->
   <section class="info-box">
-    <h2 style="text-align:center; color:#00eaff;">Privacy Policy – Babypeacock Space</h2>
-
-    <p><b>Babypeacock Space</b> is a free arcade game developed for entertainment purposes only.</p>
+    <h2>Privacy Policy – Babypeacock Space</h2>
 
     <p>
-      We do not collect, store, or share any personal data such as names, emails, or device information.
-      The game may use <b>Firebase Analytics</b> to measure anonymous gameplay statistics
-      (e.g., number of plays or country counts) for improving player experience.
+      <b>Babypeacock Space</b> is a free arcade game developed for entertainment purposes only.
     </p>
 
-    <p>No personal accounts or login data are required.  
-       The app is fully playable offline.</p>
+    <p>
+      We do not collect, store, or share any personal data such as names, email addresses,
+      phone numbers or device identifiers. The game does not require you to create an account
+      or log in to use any of its features.
+    </p>
 
     <p>
-      For questions, contact us at  
-      <a href="mailto:babypeacock2025@gmail.com">babypeacock2025@gmail.com</a>.
+      The game may use <b>Firebase Analytics</b> or similar services to measure anonymous gameplay
+      statistics (for example, number of plays or country counts). These statistics are used only
+      to understand how the game is used and to improve the overall player experience.  
+      This information is aggregated and is not used to personally identify any user.
+    </p>
+
+    <p>
+      The app is fully playable offline. Network access, when available, is only used for optional
+      features such as updating leaderboard data or collecting anonymous usage statistics.
+    </p>
+
+    <p>
+      If you have any questions about this privacy policy or the game itself, you can contact us at:<br>
+      <a href="mailto:babypeacock2025@gmail.com">babypeacock2025@gmail.com</a>
     </p>
 
     <p style="text-align:right; font-size:13px; color:#8ecfff;">
       Last updated: November 2025
     </p>
   </section>
+
+  <footer>
+    © 2025 Babypeacock
+  </footer>
 
 </body>
 </html>
